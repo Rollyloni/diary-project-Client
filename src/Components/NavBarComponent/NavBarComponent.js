@@ -6,6 +6,7 @@ function NavBarComponent(props) {
   const addTextArea = {
     id: `${props.noOfItems}paragraph`,
     type: "textarea",
+    content: ""
   }
   
   
@@ -14,11 +15,9 @@ function NavBarComponent(props) {
   }
 
   const handleOnClickSearch = () => {
-    console.log("we clicked search")
     props.searchFunc(true)
   }
   
-  console.log(props)
   return (
     <div>
       
