@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import FormComponent from "./Components/FormComponent";
 import NavBarComponent from "./Components/NavBarComponent";
 import SearchComponent from "./Components/SearchComponent";
+import NewEntryComponent from "./Components/NewEntryComponent";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact component={HomePage} path="/" />
         <Route exact component={FormComponent} path="/form" />
         <Route component={SearchComponent} path="/search" />
+        <Route component={NewEntryComponent} path="/new" />
       </Switch>
     </BrowserRouter>
   );

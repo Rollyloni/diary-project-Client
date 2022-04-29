@@ -8,7 +8,7 @@ const NavBarComponent = () => {
     <div>
       <ul className="links">
         <li>
-          <NavLink to="/" className="links__section">
+          <NavLink to="/new" className="links__section">
             Add New entry
           </NavLink>
         </li>
