@@ -1,0 +1,17 @@
+li {
+  list-style: none;
+}
+.links__section {
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  padding: 3rem 2rem;
+  font-size: 2rem;
+}
+
+

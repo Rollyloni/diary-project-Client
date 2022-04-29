@@ -1,6 +1,6 @@
-import React from "react";
 
-const SearchComponent = () => {
+
+function SearchComponent () {
   return (
     <div>
       <input placeholder="Search..." />
