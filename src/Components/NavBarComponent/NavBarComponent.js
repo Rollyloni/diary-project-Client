@@ -1,9 +1,9 @@
 import React from "react";
-import "../Pages/HomePage.scss";
+import "../../Pages/HomePage.scss";
 import { NavLink } from "react-router-dom";
-import "../Components/NavBarComponent.scss";
+import "./NavBarComponent.scss";
 
-const NavBarComponent = () => {
+function NavBarComponent() {
   return (
     <div>
       <ul className="links">
