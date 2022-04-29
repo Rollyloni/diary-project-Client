@@ -9,8 +9,13 @@ function NavBarComponent(props) {
   }
   
   
-  const handleOnClick = () => {
+  const handleOnClickNewEntry = () => {
     props.stateFunc(addTextArea)
+  }
+
+  const handleOnClickSearch = () => {
+    console.log("we clicked search")
+    props.searchFunc(true)
   }
   
   console.log(props)
@@ -18,10 +23,10 @@ function NavBarComponent(props) {
     <div>
       
       <ul className="links">
-        <li onClick={() => {handleOnClick()}}>
+        <li onClick={() => {handleOnClickNewEntry()}}>
             Add New entry
         </li>
-        <li>
+        <li onClick={() => {handleOnClickSearch()}}>
             Add an entertainment
         </li>
         <li>

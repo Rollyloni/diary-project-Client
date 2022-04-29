@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import SearchComponent from "./Components/SearchComponent";
+// import SearchComponent from "./Components/SearchComponent";
 import NewEntry from "./Pages/NewEntry/NewEntry";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage}  />
         <Route path="/new-entry" component={NewEntry} />
-        <Route component={SearchComponent} path="/search" />
+        {/* <Route component={SearchComponent} path="/search" /> */}
       </Switch>
     </BrowserRouter>
   );
