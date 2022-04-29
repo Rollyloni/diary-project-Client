@@ -6,10 +6,10 @@ function HomePage () {
       <nav>
         <ul>
           <Link to='/new-entry'>
-            <li>Start a New Journal Entry</li>
+            <li className="main-navigation">Start a New Journal Entry</li>
           </Link>
           <Link to='./old-entries'>
-            <li>Open an old Entry</li>
+            <li className="main-navigation">Open an old Entry</li>
           </Link>
           
         </ul>

@@ -1,26 +1,31 @@
-import React from "react";
+// import { Component } from "react";
 import "../../Pages/HomePage.scss";
-import { NavLink } from "react-router-dom";
 import "./NavBarComponent.scss";
 
-function NavBarComponent() {
+function NavBarComponent(props) {
+  const addTextArea = {
+    id: `${props.noOfItems}paragraph`,
+    type: "textarea",
+  }
+  
+  
+  const handleOnClick = () => {
+    props.stateFunc(addTextArea)
+  }
+  
+  console.log(props)
   return (
     <div>
+      
       <ul className="links">
-        <li>
-          <NavLink to="/new" className="links__section">
+        <li onClick={() => {handleOnClick()}}>
             Add New entry
-          </NavLink>
         </li>
         <li>
-          <NavLink to="/search" className="links__section">
             Add an entertainment
-          </NavLink>
         </li>
         <li>
-          <NavLink to="/form" className="links__section">
             Add a Description
-          </NavLink>
         </li>
       </ul>
     </div>
