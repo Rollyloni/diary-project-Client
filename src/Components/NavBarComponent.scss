@@ -1,0 +1,32 @@
+li {
+  list-style: none;
+}
+.links__section {
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  padding: 3rem 2rem;
+  font-size: 2rem;
+}
+
+textarea {
+  height: 30vw;
+  padding: 1rem;
+  width: 80%;
+  margin: 4rem;
+  font-size: 2rem;
+  color: black;
+  border-radius: 1.5rem;
+}
+input {
+  margin: 3rem;
+  padding: 2rem;
+  width: 60%;
+  font-size: 2rem;
+  border-radius: 1.2rem;
+}
