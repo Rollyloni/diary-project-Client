@@ -1,0 +1,28 @@
+li {
+  list-style: none;
+}
+.links__section {
+  text-decoration: none;
+  color: black;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  font-size: 1.75rem;
+}
+
+.home {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.navigation {
+  background-color: plum;
+  border-radius: 1.5rem;
+
+}
+

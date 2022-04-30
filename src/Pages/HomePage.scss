@@ -2,6 +2,18 @@ body {
   background-image: url("../assets/images/estee-janssens-NO0W3c0speE-unsplash\ \(1\).jpg");
   background-position: center;
   background-size: cover;
+  height: 100vw;
+  background-repeat: no-repeat;
+}
+
+.main-navigation {
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: beige;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 button {

@@ -1,9 +1,20 @@
-import React, { Component } from "react";
+import './HomePage';
+import {Link } from "react-router-dom";
 
-class HomePage extends Component {
-  render() {
-    return <div></div>;
-  }
+function HomePage () {
+    return (
+      <nav>
+        <ul>
+          <Link to='/new-entry'>
+            <li className="main-navigation">Start a New Journal Entry</li>
+          </Link>
+          <Link to='./old-entries'>
+            <li className="main-navigation">Open an old Entry</li>
+          </Link>
+          
+        </ul>
+      </nav>
+    )
 }
 
 export default HomePage;
