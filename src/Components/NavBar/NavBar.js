@@ -3,15 +3,15 @@ import {Link } from "react-router-dom";
 
 function HomePage () {
     return (
-      <nav>
-        <ul>
-          <Link to='/new-entry'>
-            <li className="main-navigation">Start a New Journal Entry</li>
+      <nav className='main-navigation'>
+        <ul className='main-navigation__list'>          
+          <Link to='./old-entries' className="main-navigation__links">
+            <li >My Journal</li>
           </Link>
-          <Link to='./old-entries'>
-            <li className="main-navigation">Open an old Entry</li>
+          <Link to='/new-entry' className="main-navigation__links">
+            <li >Start a New Entry</li>
           </Link>
-          
+
         </ul>
       </nav>
     )
