@@ -1,9 +1,9 @@
-import './NewEntry.scss';
+import '../styles/NewEntry.scss';
 import { Component } from 'react';
-import EntryNavBar from "../../Components/EntryNavBar/EntryNavBar";
-import SearchComponent from '../../Components/SearchComponent/SearchComponent';
+import EntryNavBar from "../Components/EntryNavBar/EntryNavBar";
+import SearchComponent from '../Components/SearchComponent/SearchComponent';
 import axios from 'axios';
-import NavBar from '../../Components/NavBar/NavBar'
+import NavBar from '../Components/NavBar/NavBar'
 
 const backendAPI = "http://localhost:9000"
 
