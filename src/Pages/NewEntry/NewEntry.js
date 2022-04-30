@@ -1,9 +1,10 @@
 import './NewEntry.scss';
 import { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NavBarComponent from "../../Components/NavBarComponent/NavBarComponent";
 import SearchComponent from '../../Components/SearchComponent/SearchComponent';
+import axios from 'axios';
 
+const backendAPI = "http://localhost:9000"
 
 class NewEntry extends Component {
     state = {
@@ -35,8 +36,9 @@ class NewEntry extends Component {
             journalContent:this.state.loadComponents,
             dateStamp: currentTime
         }
-        console.log(journalEntryObj)
-        //event.reset()
+        axios.post(`${backendAPI}/postJournal`, journalEntryObj)
+        .then()
+        event.reset()
     }
 
     onInputChange = (event) => {
@@ -51,7 +53,6 @@ class NewEntry extends Component {
     render() {
         return (
             <>
-                <Link to="/">Home</Link>
                 <NavBarComponent
                     stateFunc={this.stateFunc}
                     noOfItems={this.state.loadComponents.length}

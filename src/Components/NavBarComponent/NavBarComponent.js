@@ -1,6 +1,8 @@
 // import { Component } from "react";
 import "../../Pages/HomePage.scss";
 import "./NavBarComponent.scss";
+import { Link } from 'react-router-dom';
+
 
 function NavBarComponent(props) {
   const addTextArea = {
@@ -19,7 +21,7 @@ function NavBarComponent(props) {
   }
   
   return (
-    <div>
+    <div className="navigation">
       
       <ul className="links">
         <li onClick={() => {handleOnClickNewEntry()}}>
@@ -29,7 +31,7 @@ function NavBarComponent(props) {
             Add an entertainment
         </li>
         <li>
-            Add a Description
+            <Link  className="home" to="/" >Home</Link>
         </li>
       </ul>
     </div>

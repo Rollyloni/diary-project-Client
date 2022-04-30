@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-// import SearchComponent from "./Components/SearchComponent";
 import NewEntry from "./Pages/NewEntry/NewEntry";
+import OldEntries from "./Pages/OldEntries/OldEntries";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomePage}  />
         <Route path="/new-entry" component={NewEntry} />
-        {/* <Route component={SearchComponent} path="/search" /> */}
+        <Route path="/old-entries" component={OldEntries} />
       </Switch>
     </BrowserRouter>
   );
