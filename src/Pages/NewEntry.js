@@ -95,6 +95,7 @@ class NewEntry extends Component {
                     })
                     : null}
                 </form>
+                
                 {this.state.searchPage 
                 ? <SearchComponent 
                     searchFunc={this.searchFunc}

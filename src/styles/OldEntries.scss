@@ -1,35 +1,76 @@
-.textarea {
+
+.read-journal {
+    display: flex;
+
+    &--left {
+        max-width: 15rem;
+        padding: 1rem;
+    }
+
+    &__list {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    &__links {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+        display: inline-block;
+        color: black;
+        border-radius: 1.5rem;
+        background-color: rgba(245,245,220, 0.5);
+        width: 80%;
+
+        &:hover {
+            background-color: rgba(245,245,220, 1.0);
+        }
+    }
+
+    &__header {
+        margin: 0%;
+    }
+
+    &__para {
+        margin: 0.5rem 0%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.active-journal-post {
     height: fit-content;
     padding: 1rem;
     width: 80%;
-    margin: 4rem;
+    margin: 1rem;
     font-size: 2rem;
     color: black;
     border-radius: 1.5rem;
-    background-color: beige;
-}
+    background-color: rgba(245,245,220, 0.75);
+    padding: 2rem;
+    
+    &__heading-container{
+        border-bottom: 5px double gray;
+    }
 
-.journal-links {
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    display: inline-block;
-    color: black;
-    border-radius: 1.5rem;
-    background-color: beige;
-}
+    &__heading {
+        margin: 0%;
+    }
 
-.journal-header, .journal-para {
-    margin: 0rem;
-}
+    &__date {
+        margin: 0%;
+        line-height: 3.5rem;
+    }
 
-.home-button {
-    background-color: beige;
-    opacity: 50%;
-    padding: 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 1rem;
-  
+    &__subcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    &__textarea {
+        height: fit-content;
+        align-self: center;
+    }
 }

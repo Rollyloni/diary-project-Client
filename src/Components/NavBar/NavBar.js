@@ -5,7 +5,7 @@ function HomePage () {
     return (
       <nav className='main-navigation'>
         <ul className='main-navigation__list'>          
-          <Link to='./old-entries' className="main-navigation__links">
+          <Link to='./my-journal' className="main-navigation__links">
             <li >My Journal</li>
           </Link>
           <Link to='/new-entry' className="main-navigation__links">
