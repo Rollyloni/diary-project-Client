@@ -1,7 +1,7 @@
 import './OldEntries.scss';
 import { Component } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
+import NavBar from '../../Components/NavBar/NavBar'
 
 const backendAPI = "http://localhost:9000"
 
@@ -43,7 +43,7 @@ class OldEntries extends Component {
         }
         return (
             <>
-            <Link to="/" className="home-button">Home</Link>
+            <NavBar />
             <section>
                 <ul>
                     {this.state.journalEntries.map( (entry, entryIndex) => {

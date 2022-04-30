@@ -1,7 +1,5 @@
-// import { Component } from "react";
-import "../../Pages/HomePage.scss";
-import "./NavBarComponent.scss";
-import { Link } from 'react-router-dom';
+import "../NavBar/NavBar.scss";
+import "./EntryNavBar.scss";
 
 
 function NavBarComponent(props) {
@@ -10,7 +8,6 @@ function NavBarComponent(props) {
     type: "textarea",
     content: ""
   }
-  
   
   const handleOnClickNewEntry = () => {
     props.stateFunc(addTextArea)
@@ -29,9 +26,6 @@ function NavBarComponent(props) {
         </li>
         <li onClick={() => {handleOnClickSearch()}}>
             Add an entertainment
-        </li>
-        <li>
-            <Link  className="home" to="/" >Home</Link>
         </li>
       </ul>
     </div>

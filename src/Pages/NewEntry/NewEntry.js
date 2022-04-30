@@ -1,8 +1,9 @@
 import './NewEntry.scss';
 import { Component } from 'react';
-import NavBarComponent from "../../Components/NavBarComponent/NavBarComponent";
+import EntryNavBar from "../../Components/EntryNavBar/EntryNavBar";
 import SearchComponent from '../../Components/SearchComponent/SearchComponent';
 import axios from 'axios';
+import NavBar from '../../Components/NavBar/NavBar'
 
 const backendAPI = "http://localhost:9000"
 
@@ -53,7 +54,8 @@ class NewEntry extends Component {
     render() {
         return (
             <>
-                <NavBarComponent
+                <NavBar />
+                <EntryNavBar
                     stateFunc={this.stateFunc}
                     noOfItems={this.state.loadComponents.length}
                     clickSearch={this.state.searchPage}

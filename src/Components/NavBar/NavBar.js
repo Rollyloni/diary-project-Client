@@ -1,4 +1,4 @@
-import './HomePage';
+import './NavBar.scss';
 import {Link } from "react-router-dom";
 
 function HomePage () {
